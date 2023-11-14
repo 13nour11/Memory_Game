@@ -1,0 +1,146 @@
+*{
+    box-sizing: border-box; 
+    /* عشان مياخدش من مساحة العنصر border , padding */
+}
+body{
+    font-family: Arial, Tahoma, sans-serif;
+    background: linear-gradient(#c19898, #693e52) ;/* rgba(145, 152, 229, 0.4) */
+    color: rgba(214, 89, 89, 0.7);
+}
+.control-buttons{ 
+
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    background: rgba(0,0,0,0.64); /* rgba(3, 169, 244, 0.9)*/ /* rgba(170, 59, 59, 0.7)*/
+    position: fixed; /* عشان لو اتحركت فالصفحة الزرار يفضل موجود ثابت*/
+    top: 0;
+    left: 0;
+}
+.control-buttons span{
+    position: absolute;
+    top: 50%;
+    left: 50%; 
+    transform: translate(-50% , -50%); /* عشان اخلي العنصر متوسطن فالوضع الافقي والراسي*/
+    color: #fff;
+    background: linear-gradient(#c19898, #693e52)/*linear-gradient(#3f2742, #795377)*/ ; /*#f44336;*/ /*linear-gradient(#e66465, #9198e5)*/
+    cursor: pointer;
+    padding: 15px 25px;
+    text-align: center;
+    border-radius: 6px;
+    font-size: 30px;
+}
+.control-buttons span:hover{
+    color: #3f2742;
+}
+.info-containear{
+    border-radius: 6px;
+    width: 1080px;
+    padding: 20px;
+    margin: 20px auto 0;
+    background-color: whitesmoke; /* #f6f6f6 */
+    border: 2.2px solid #795377; /* #2196F3 */ /* rgba(94, 99, 158, 0.9) */
+    overflow: hidden;
+    font-size: 24px;
+}
+.info-containear .name{
+    width: 50%;
+    float: left;
+}
+.info-containear .trials{
+    width: 50%; /* عشان تاخد نص المساحة*/
+    float: right;
+    text-align: right;
+}
+.memory-game-blocks{
+    
+    width: 1100px; /* زيادة 20 علي اللي فوق وهيتقسمو 10 عاليمين و 10 عاليسار*/
+    display: flex; /* عشان يجو جمب بعض*/
+    flex-wrap: wrap; /*عشان عندنا عناصر كتيرة جدا عشان الزيادة ينزل تحت عادي*/
+    margin: 20px auto;
+    
+}
+.memory-game-blocks.no-clicking{
+    pointer-events: none;
+}
+.memory-game-blocks .game-block{
+    
+    height: 200px;
+    transition: transform 0.3s;
+    transform-style: preserve-3d;
+    cursor: pointer;
+    position: relative;
+    flex: 1 0 200px; /* 300 is the width of the element*/ /*200 */
+    margin: 0 10px 20px;
+
+    
+}
+.memory-game-blocks .game-block .front{
+    background: linear-gradient( #693e52,#c19898,#ebebe3); /* rgba(145, 152, 229, 0.4) */
+    line-height: 200px; /* the same of height of the "game-block" to be at the center*/
+
+}
+/* هنعمل العلامة او الصورة اللي فالرونت (من برا) بال => before,after */
+.memory-game-blocks .game-block .front::before{
+    content: '!';
+    color: #9f1e49; /* white*/
+    font-size: 140px;
+    font-weight: bold;
+}
+.memory-game-blocks .game-block .back{
+ 
+    background:linear-gradient(#3f2742, #795377);/* rgba(94, 99, 158, 0.3);/* #607D88*/ /* linear-gradient(#e66465, #9198e5)*/
+    transform: rotateY(180deg);
+   
+}
+.memory-game-blocks .game-block .back img{
+    height: 140px;
+    width: 140px;
+    /* كدة هيبقي فاضل 60 منهم 30 فوق و 30 تحت */
+    margin-top: 30px;
+
+}
+.memory-game-blocks .game-block .face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    backface-visibility: hidden;
+    border: 5px solid #795377 ;/*#f32195; /*  rgba(94, 99, 158, 0.9)*/
+    border-radius: 14px;
+}
+.memory-game-blocks .game-block.is-flipped,
+.memory-game-blocks .game-block.has-match{
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+    pointer-events: none;
+}
+/* .gameOverBackground{
+    background-color: rgba(0,0,0,0.5);
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    bottom: 0;
+} */
+/* #popUp{
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px;
+    border-radius: 5px;
+    display: none;
+    z-index: 1000;
+
+} */
+/*
+
+ 
+        
+*/
