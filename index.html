@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory Game</title>
+    <!-- css  -->
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div class="control-buttons">
+        <span>Start Game</span>
+    </div> 
+
+    <!-- images must be the same height and widthes -->
+    <div class="info-containear">
+        <div class="name">Hello: <span></span></div>
+        <div class="trials">Wrong Trials: <span>0</span></div>
+    </div>
+    
+<div class="memory-game-blocks">
+<!-- لاحظ ان كل حاجة هيبقي ليها نسختين -->
+        <div class="game-block" data-technology="flower1_angular"> <!--data-technology => custom attribute-->
+            <!-- هيكون فيه الجزء الامامي اللي علامة الاستفهام والجزء الخلفي اللي هو الصورة بتاعتي -->
+            <!-- note that: front and back have some of the same properties so that I put the same class name "face" -->
+            <div class="face front"></div>
+            <div class="face back">
+                <img src="imags/flower1_angular.jpg" alt="">
+            </div>
+        </div>
+        <!-- النسخة التانية -->
+        <div class="game-block" data-technology="flower1_angular">
+            <!-- هيكون فيه الجزء الامامي اللي علامة الاستفهام والجزء الخلفي اللي هو الصورة بتاعتي -->
+            <!-- note that: front and back have some of the same properties so that I put the same class name "face" -->
+            <div class="face front"></div>
+            <div class="face back">
+                <img src="imags/flower1_angular.jpg" alt="">
+            </div>
+        </div>
+        <!-- ================== img2 -->
+        <div class="game-block" data-technology="flower2">
+            <div class="face front"></div>
+            <div class="face back">
+                <img src="imags/flower2.jpg" alt="">
+            </div>
+        </div>
+        <!-- النسخة التانية -->
+        <div class="game-block" data-technology="flower2">
+            <div class="face front"></div>
+            <div class="face back">
+                <img src="imags/flower2.jpg" alt="">
+            </div>
+        </div>
+        <!-- ================== img3 -->
+            <div class="game-block" data-technology="flower3">
+            <div class="face front"></div>
+            <div class="face back">
+                <img src="imags/flower3.jpg" alt="">
+            </div>
+        </div>
+        <!-- النسخة التانية -->
+        <div class="game-block" data-technology="flower3">
+            <div class="face front"></div>
+            <div class="face back">
+                <img src="imags/flower3.jpg" alt="">
+            </div>
+        </div>
+        <!-- ================== img4 -->
+        <div class="game-block" data-technology="flower4">
+            <div class="face front"></div>
+            <div class="face back">
+                <img src="imags/flower4.jpg" alt="">
+            </div>
+        </div>
+        <!-- النسخة التانية -->
+        <div class="game-block" data-technology="flower4">
+            <div class="face front"></div>
+            <div class="face back">
+                <img src="imags/flower4.jpg" alt="">
+            </div>
+        </div>
+        <!-- ================== img5 -->
+        <div class="game-block" data-technology="flower5">
+            <div class="face front"></div>
+            <div class="face back">
+                <img src="imags/flower5.jpg" alt="">
+            </div>
+        </div>
+        <!-- النسخة التانية -->
+        <div class="game-block" data-technology="flower5">
+            <div class="face front"></div>
+            <div class="face back">
+                <img src="imags/flower5.jpg" alt="">
+            </div>
+        </div>
+        <!-- ================== img6 -->
+        <div class="game-block" data-technology="flower6">
+            <div class="face front"></div>
+            <div class="face back">
+                <img src="imags/flower6.jpg" alt="">
+            </div>
+        </div>
+        <!-- النسخة التانية -->
+        <div class="game-block" data-technology="flower6">
+            <div class="face front"></div>
+            <div class="face back">
+                <img src="imags/flower6.jpg" alt="">
+            </div>
+        </div>
+        <!-- ================== img7 -->
+        <div class="game-block" data-technology="flower7">
+            <div class="face front"></div>
+            <div class="face back">
+                <img src="imags/flower7.jpg" alt="">
+            </div>
+        </div>
+        <!-- النسخة التانية -->
+        <div class="game-block" data-technology="flower7">
+            <div class="face front"></div>
+            <div class="face back">
+                <img src="imags/flower7.jpg" alt="">
+            </div>
+        </div>
+        <!-- ================== img8 -->
+        <div class="game-block" data-technology="flower8">
+            <div class="face front"></div>
+            <div class="face back">
+                <img src="imags/flower8.jpg" alt="">
+            </div>
+        </div>
+        <!-- النسخة التانية -->
+        <div class="game-block" data-technology="flower8">
+            <div class="face front"></div>
+            <div class="face back">
+                <img src="imags/flower8.jpg" alt="">
+            </div>
+        </div>
+        <!-- ================== img9 -->
+        <div class="game-block" data-technology="flower9">
+            <div class="face front"></div>
+            <div class="face back">
+                <img src="imags/flower9.jpg" alt="">
+            </div>
+        </div>
+        <!-- النسخة التانية -->
+        <div class="game-block" data-technology="flower9">
+            <div class="face front"></div>
+            <div class="face back">
+                <img src="imags/flower9.jpg" alt="">
+            </div>
+        </div>
+        <!-- ================== img10 -->
+        <div class="game-block" data-technology="flower10">
+            <div class="face front"></div>
+            <div class="face back">
+                <img src="imags/flower10.jpg" alt="">
+            </div>
+        </div>
+        <!-- النسخة التانية -->
+        <div class="game-block" data-technology="flower10">
+            <div class="face front"></div>
+            <div class="face back">
+                <img src="imags/flower10.jpg" alt="">
+            </div>
+        </div>
+       
+    </div>
+    <!-- Game Over Background
+    <div class="gameOverBackground" id="gameOverBackground"></div> -->
+        
+    <!-- Popup Msg
+    <div id="popUp"></div> -->
+
+    <!-- <audio src="audios/start.mp3" id="start" preload="auto"></audio> -->
+    <audio src="audios/success1.mp3" id="start" preload="auto"></audio>
+    <audio src="audios/success.mp3" id="success" preload="auto"></audio>
+    <audio src="audios/fail.mp3" id="fail" preload="auto"></audio>
+    <audio src="audios/win.mp3" id="win" preload="auto"></audio>
+    <audio src="audios/gameOver.wav" id="gameOver" preload="auto"></audio>
+    <audio src="audios/timer.wav" id="timer" preload="none"></audio>
+
+    <script src="tryy.js"></script>
+    
+</body>
+</html>
